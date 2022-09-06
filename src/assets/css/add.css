@@ -14,9 +14,12 @@ p.notify {
 
 .row2 {
     width:100%;
+    margin: 15px 0px;
     display: grid;
+    gap:10px;
     grid-template-columns: auto auto;
-    padding:20px;
+    justify-content: start;
+    padding-left: 20px;
 }
 
 input {
@@ -27,4 +30,16 @@ input {
     cursor:pointer;
     padding:20px;
     text-decoration:underline;
+}
+
+#updateBtn{
+    width:100%;
+    background-color: brown;
+    color: white;
+    padding:12px 10px;
+}
+
+html,body{
+    background-color: rgba(226,226,226,0.5);
+    height: 100%;
 }

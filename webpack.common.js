@@ -1,5 +1,4 @@
 const path = require('path');
-
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
@@ -13,21 +12,13 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [['@babel/preset-env', { targets: { esmodules: true}}],['@babel/preset-react', {"runtime":"automatic"}]]
+            presets: [
+              ['@babel/preset-env', { targets: { esmodules: true}}],
+              ['@babel/preset-react', {"runtime":"automatic"}]
+            ]
           }
         }
       },
-    //   {
-    //     test: /\.svg$/,
-    //     use: [
-    //       {
-    //         loader: 'svg-url-loader',
-    //         options: {
-    //           limit: 10000,
-    //         },
-    //       },
-    //     ],
-    //   },
     {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
